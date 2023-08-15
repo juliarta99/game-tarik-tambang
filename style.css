@@ -78,6 +78,7 @@ footer{
     opacity: .5;
     width: 15rem;
     transform: rotate(-10deg);
+    z-index: -999;
 }
 #game {
     display: flex;
