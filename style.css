@@ -1,10 +1,108 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: rgb(255,0,9);
+    background: linear-gradient(90deg, rgba(255,0,9,0.5074404761904762) 0%, rgba(255,255,255,0.639093137254902) 100%);
+}
+.mt-1{
+    margin-top: 1rem !important;
+}
+.m-auto{
+    margin: auto !important;
+}
+.text-justify{
+    text-align: justify !important;
+}
+.flex-col{
     display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#about, #howToPlay{
+    padding: 1rem;
+    height: 80vh;
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    color: brown;
+    text-align: center;
+}
+.deskripsi{
+    text-align: justify;
+    font-size: .8rem;
+}
+.logo-hut{
+    width: 200px;
+}
+.btn{
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    background-color: brown;
+    color: white;
+    cursor: pointer;
+}
+.text-muted{
+    display: block;
+    font-size: 1rem;
+    opacity: .7;
+    text-align: center;
+}
+li{
+    font-size: .8rem;
+}
+footer{
+    text-align: center;
+    font-size: .8rem;
+}
+.d-none{
+    display: none !important;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.logo-background{
+    position: fixed;
+    bottom: -30px;
+    right: 0;
+    opacity: .5;
+    width: 15rem;
+    transform: rotate(-10deg);
+}
+#game {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 90vh;
+    width: 100%;
     margin: 0;
 }
 canvas {
-    border: 2px solid black;
+    border: 2px solid transparent;
+    border-image:linear-gradient(30deg, #FF1200, #ff0000, #ff2600, #fdfdff, #fffffe, #fff);
+    border-image-slice:1;
+}
+.petunjukGame{
+    font-size: .8rem;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+span.key{
+    color: #fff;
+    background-color: brown;
+    padding: .2rem .5rem;
+    border-radius: 4px;
 }
