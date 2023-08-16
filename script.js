@@ -261,7 +261,7 @@ if(window.innerWidth < 820) {
     const clouds = []
 
     const backImage = new Image();
-    backImage.src = 'assets/back-in820.jpg'
+    backImage.src = 'assets/back-in820.JPG'
     const player1Image = new Image();
     player1Image.src = 'assets/player1.png';
     const player2Image = new Image();
