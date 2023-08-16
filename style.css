@@ -22,6 +22,9 @@ body{
     flex-direction: column;
     gap: .5rem;
 }
+.fs-small{
+    font-size: .5rem !important;
+}
 #about, #howToPlay{
     padding: 1rem;
     height: 80vh;
@@ -58,10 +61,6 @@ body{
     text-align: center;
 }
 li{
-    font-size: .8rem;
-}
-footer{
-    text-align: center;
     font-size: .8rem;
 }
 .d-none{
@@ -101,11 +100,44 @@ canvas {
     display: flex;
     justify-content: space-between;
 }
+.petunjukGame.mobile{
+    display: none;
+}
 span.key{
     color: #fff;
     background-color: brown;
     padding: .2rem .5rem;
     border-radius: 4px;
+}
+footer{
+    text-align: center;
+    font-size: .8rem;
+}
+@media screen and (max-width:820px) {
+    .canvasGame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #game{
+        display: inline-block;
+    }
+    .btn-inGame{
+        display: flex;
+        justify-content: center;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .petunjukGame{
+        width: 100%;
+        padding: 0 1rem;
+    }
+    .petunjukGame.desktop{
+        display: none;
+    }
+    .petunjukGame.mobile{
+        display: block;
+    }
 }
 @media screen and (max-width:600px) {
     #about, #howToPlay{
