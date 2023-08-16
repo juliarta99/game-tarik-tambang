@@ -31,7 +31,8 @@
     <span class="text-muted">Tap - TapBang</span>
     <ol class="mt-1 text-justify">
       <li>Game ini terdapat 2 pemain yang akan beradu kecepatan serta ketangkasannya.</li>
-      <li>Pemain 1 dapat melakukan tarikan dengan cara menekan tombol 'A' pada keyboard, sedangakan Pemain 2 melakukan tarikan dengan cara menekan tombol 'Enter' pada keyboard.</li>
+      <li>Desktop : Pemain 1 dapat melakukan tarikan dengan cara menekan tombol 'A' pada keyboard, sedangakan Pemain 2 melakukan tarikan dengan cara menekan tombol 'Enter' pada keyboard. <br>
+      Mobile : Pemain dapat melakukan tarikan dengan cara mengklik area masing - masing.</li>
       <li>Saat pemain menekan tombol tersebut akan menambahkan kekuatan tarikan, maka dibutuhkan kecepatan jari dari para pemain.</li>
       <li>Untuk mendapatkan kemenangan, pemain harus dapat menarik lawannya hingga ke garis yang telah ditentukan.</li>
       <li>Jika salah satu pemain berhasil mengalahkan lawan, akan muncul pop-up menang dan tunggu selama 5 detik untuk ronde berikutnya.</li>
@@ -40,7 +41,7 @@
     <button class="btn mt-1" onclick="showAbout()">Kembali</button>
   </div>
   <div id="game" class="d-none">
-    <div>
+    <div class="btn-inGame">
       <button id="backToHome" onclick="showAbout()" class="btn">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
           <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
@@ -52,10 +53,16 @@
         </svg>
       </button>
     </div>
-    <canvas id="canvas"></canvas>
-    <div class="petunjukGame">
+    <div class="canvasGame">
+      <canvas id="canvas"></canvas>
+    </div>
+    <div class="petunjukGame desktop">
       <p>Klik <span class="key">A</span></p>
       <p>Klik <span class="key">Enter</span></p>
+    </div>
+    <div class="petunjukGame mobile">
+      <p>Klik <span class="key">pada area masing - masing</span></p>
+      <p class="text-muted fs-small">*putar device menjadi vertical</p>
     </div>
     <audio id="backsound" src="assets/backsound.mp3"></audio>
     <audio id="winnerSound" src="assets/winner.mp3"></audio>
