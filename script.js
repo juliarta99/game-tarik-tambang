@@ -391,18 +391,18 @@ if(window.innerWidth < 820) {
         
     function update() {
         if(keys['a'] &&  tambangLose2 >= losePlayer2Y) {
-            player2Y -= 2;
-            player1Y -= 2;
-            tambangY -= 2;
-            tambangLose1 -= 2;
-            tambangLose2 -= 2;
+            player2Y -= 5;
+            player1Y -= 5;
+            tambangY -= 5;
+            tambangLose1 -= 5;
+            tambangLose2 -= 5;
         }
         if(keys['Enter'] && tambangLose1 <= losePlayer1Y - tambangWidth) {
-            player1Y += 2;
-            player2Y += 2;
-            tambangY += 2;
-            tambangLose1 += 2;
-            tambangLose2 += 2;
+            player1Y += 5;
+            player2Y += 5;
+            tambangY += 5;
+            tambangLose1 += 5;
+            tambangLose2 += 5;
         }
         if(tambangLose2 <= losePlayer2Y) {
             win1 += 1
@@ -471,18 +471,18 @@ if(window.innerWidth < 820) {
         const rect = canvas.getBoundingClientRect();
         const y = event.clientY - rect.top;
         if(y < losePlayer1Y && tambangLose2 >= losePlayer2Y) {
-            player2Y -= 2;
-            player1Y -= 2;
-            tambangY -= 2;
-            tambangLose1 -= 2;
-            tambangLose2 -= 2;
+            player2Y -= 5;
+            player1Y -= 5;
+            tambangY -= 5;
+            tambangLose1 -= 5;
+            tambangLose2 -= 5;
         }
         if(y > losePlayer2Y && tambangLose1 <= losePlayer1Y - tambangWidth) {
-            player1Y += 2;
-            player2Y += 2;
-            tambangY += 2;
-            tambangLose1 += 2;
-            tambangLose2 += 2;
+            player1Y += 5;
+            player2Y += 5;
+            tambangY += 5;
+            tambangLose1 += 5;
+            tambangLose2 += 5;
         }
     })
 
